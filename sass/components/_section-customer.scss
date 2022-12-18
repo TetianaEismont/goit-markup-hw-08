@@ -1,0 +1,37 @@
+// .customer__list {
+//     display: flex;
+//     justify-content: center;
+// }
+
+// .customer__item {
+//     flex-basis: calc((100% - 30px*5) / 6);
+
+//     &:not(:last-child) {
+//         margin-right: 30px;
+//     }
+// }
+
+// .customer__link {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+
+//     width: 170px;
+//     height: 92px;
+//     color: $main-icon-color;
+//     border: 1px solid $main-icon-color;
+//     border-radius: 4px;
+
+//     transition: color $duration $timing-function,
+//         border $duration $timing-function;
+
+//     &:hover,
+//     &:focus {
+//         color: $acent-color;
+//         border: 1px solid $acent-color;
+//     }
+// }
+
+// .customer__icon {
+//     fill: currentColor;
+// }

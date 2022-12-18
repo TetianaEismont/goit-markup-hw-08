@@ -1,0 +1,114 @@
+// .page-footer {
+//     background-color: $accent-background;
+//     padding-top: 60px;
+// }
+
+// .page-footer__container {
+//     display: flex;
+//     align-items: baseline;
+//     justify-content: space-between;
+// }
+
+// .page-footer__contacts {
+//     margin-right: 70px;
+// }
+
+// .contacts__list {
+//     display: inline-block;
+//     margin-bottom: 60px;
+// }
+
+// .contacts__link--location {
+//     font-size: 14px;
+//     font-style: normal;
+//     line-height: 1.71;
+//     letter-spacing: 0.03em;
+//     color: $secondary-text-color;
+// }
+
+// .contacts__link--contact {
+//     font-size: 14px;
+//     font-style: normal;
+//     line-height: 1.71;
+//     color: $text-color-black-theme;
+
+//     transition: color $duration $timing-function;
+
+//     &:hover,
+//     &:focus {
+//         color: $acent-color;
+// }
+// }
+
+// .contacts__item:not(:last-child) {
+//     display: block;
+//     margin-bottom: 9px;
+// }
+
+// .page-footer__joining {
+//     margin-right: 93px;
+// }
+
+// .page-footer__subtitle {
+//     margin-bottom: 20px;
+//     font-size: 14px;
+//     line-height: 16px;
+//     letter-spacing: 0.03em;
+//     text-transform: uppercase;
+//     color: $secondary-text-color;
+// }
+
+// .page-footer__form {
+//     display: flex;
+// }
+
+// .form__label {
+//     margin-bottom: 0;
+// }
+
+// .form__input {
+//     padding: 15px 16px;
+//     width: 358px;
+//     border: 1px solid rgba(255, 255, 255, 0.3);
+//     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+//     border-radius: 4px;
+//     background-color: transparent;
+//     outline: none;
+// }
+
+// .form__input--placeholder {
+//     font-size: 16px;
+//     line-height: 1.25;
+//     color: rgba(255, 255, 255, 0.6)
+// }
+
+// .form__btn {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     min-width: 200px;
+//     margin-left: 12px;
+
+//     font-family: inherit;
+//     font-weight: 700;
+//     font-size: 16px;
+//     line-height: 1.88;
+//     letter-spacing: 0.06em;
+//     color: $secondary-text-color;
+//     border-radius: 4px;
+//     border: none;
+//     cursor: pointer;
+
+//     background: $acent-color;
+//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//     transition: background-color $duration $timing-function;
+
+//     &:hover,
+//     &:focus {
+//         background-color: $secondary-accent-color;
+//     }
+// }
+
+// .btn__icon {
+//     margin-left: 10px;
+// }
