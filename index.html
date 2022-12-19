@@ -19,7 +19,7 @@
                 <button type="button" 
                 aria-expanded="false" 
                 aria-controls="menu-container" 
-                class="page-header__btn" 
+                class="page-header__btn"
                 data-menu-button>
                     <svg width="40" height="40" aria-label="Перемикач мобільного меню">
                         <use class="page-header__btn--open" href="./img/icons.svg#icon-open-menu"></use>
@@ -132,7 +132,19 @@
             <h2 class="team__title">Наша команда</h2>
             <ul class="team__list list">
                 <li class="team__item item">
-                    <img class="team__img" src="./img/teammate1.jpg" alt="Учасник команди Ігор Дем'яненко" width="270" height="260">
+                    <img class="team__img" 
+                    srcset="
+                        ./img/teammate1-270.jpg 270w,
+                        ./img/teammate1-354.jpg 354w,
+                        ./img/teammate1-450.jpg 450w,
+                        ./img/teammate1-540.jpg 540w,
+                        ./img/teammate1-708.jpg 708w,
+                        ./img/teammate1-900.jpg 900w,
+                       " 
+                    src="./img/teammate1-270.jpg" 
+                    alt="Учасник команди Ігор Дем'яненко" 
+                    sizes="(min-width: 1200px) 25wv, (min-width: 768px) 25wv, 100wv">
+
                     <h3 class="team__subtitle">Ігор Дем'яненко</h3>
                     <p class="team__descr" lang="en">Product Designer</p>
                     <ul class="social-media__list list">
@@ -167,7 +179,19 @@
                     </ul>
                 </li>
                 <li class="team__item item">
-                    <img class="team__img" src="./img/teammate2.jpg" alt="Учасниця команди Ольга Рєпіна" width="270" height="260">
+                    <img class="team__img" 
+                    srcset="
+                        ./img/teammate2-270.jpg 270w,
+                        ./img/teammate2-354.jpg 354w,
+                        ./img/teammate2-450.jpg 450w,
+                        ./img/teammate2-540.jpg 540w,
+                        ./img/teammate2-708.jpg 708w,
+                        ./img/teammate2-900.jpg 900w,
+                       " 
+                    src="./img/teammate2-270.jpg" 
+                    alt="Учасниця команди Ольга Рєпіна" 
+                    sizes="(min-width: 1200px) 25wv, (min-width: 768px) 25wv, 100wv">
+
                     <h3 class="team__subtitle">Ольга Рєпіна</h3>
                     <p class="team__descr" lang="en">Frontend Developer</p>
                     <ul class="social-media__list list">
@@ -202,7 +226,20 @@
                     </ul>
                 </li>
                 <li class="team__item item">
-                    <img class="team__img" src="./img/teammate3.jpg" alt="Учасник команди Микола Тарасов" width="270" height="260">
+                    <img class="team__img" 
+                    
+                    srcset="
+                        ./img/teammate3-270.jpg 270w,
+                        ./img/teammate3-354.jpg 354w,
+                        ./img/teammate3-450.jpg 450w,
+                        ./img/teammate3-540.jpg 540w,
+                        ./img/teammate3-708.jpg 708w,
+                        ./img/teammate3-900.jpg 900w,
+                       " 
+                    src="./img/teammate3-270.jpg" 
+                    alt="Учасник команди Микола Тарасов" 
+                    sizes="(min-width: 1200px) 25wv, (min-width: 768px) 25wv, 100wv">
+                    
                     <h3 class="team__subtitle">Микола Тарасов</h3>
                     <p class="team__descr" lang="en">Marketing</p>
                     <ul class="social-media__list list">
@@ -237,7 +274,20 @@
                     </ul>
                 </li>
                 <li class="team__item item">
-                    <img class="team__img" src="./img/teammate4.jpg" alt="Учасник команди Михайло Єрмаков" width="270" height="260">
+                    <img class="team__img" 
+                    
+                    srcset="
+                        ./img/teammate4-270.jpg 270w,
+                        ./img/teammate4-354.jpg 354w,
+                        ./img/teammate4-450.jpg 450w,
+                        ./img/teammate4-540.jpg 540w,
+                        ./img/teammate4-708.jpg 708w,
+                        ./img/teammate4-900.jpg 900w,
+                       " 
+                    src="./img/teammate4-270.jpg" 
+                    alt="Учасник команди Михайло Єрмаков" 
+                    sizes="(min-width: 1200px) 25wv, (min-width: 768px) 25wv, 100wv">
+
                     <h3 class="team__subtitle">Михайло Єрмаков</h3>
                     <p class="team__descr" lang="en">UI Designer</p>
                     <ul class="social-media__list list">
@@ -330,58 +380,62 @@
     <!--Підвал-->
     <footer class="page-footer">
         <div class="page-footer__container container">
-            <div class="page-footer__contacts">
-                <a class="logo--footer link" href="./index.html"><span class="logo--accent">Web</span><span class="logo--black-theme">Studio</span></a>
-                <address><ul class="contacts__list list">
-                    <li class="contacts__item item"><a class="contacts__link--location link" href="https://goo.gl/maps/wLvoqqmrpKZQt63i9">м. Київ, пр-т Лесі Українки, 26</a></li>
-                    <li class="contacts__item item"><a class="contacts__link--contact link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li class="contacts__item item"><a class="contacts__link--contact link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-                </ul></address>
-            </div>
-            <div class="page-footer__joining">
-                <h3 class="page-footer__subtitle">Приєднуйтесь</h3>
-                <ul class="social-media__list list">
-                    <li class="social-media__item item">
-                        <a class="social-media__link social-media__link--dark-theme link" href="">
-                            <svg class="social-media__icon social-media__icon--dark-theme" width="20" height="20">
-                                <use href="./img/icons.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-media__item item">
-                        <a class="social-media__link social-media__link--dark-theme link" href="">
-                            <svg class="social-media__icon social-media__icon--dark-theme" width="20" height="20">
-                                <use href="./img/icons.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-media__item item">
-                        <a class="social-media__link social-media__link--dark-theme link" href="">
-                            <svg class="social-media__icon social-media__icon--dark-theme" width="20" height="20">
-                                <use href="./img/icons.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-media-item item">
-                        <a class="social-media__link social-media__link--dark-theme link" href="">
-                            <svg class="social-media__icon social-media__icon--dark-theme" width="20" height="20">
-                                <use href="./img/icons.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+            <div class="page-footer__container--tablet">
+                <div class="page-footer__contacts">
+                    <a class="logo--footer link" href="./index.html"><span class="logo--accent">Web</span><span class="logo--black-theme">Studio</span></a>
+                    <address><ul class="contacts__list list">
+                        <li class="contacts__item item"><a class="contacts__link--location link" href="https://goo.gl/maps/wLvoqqmrpKZQt63i9">м. Київ, пр-т Лесі Українки, 26</a></li>
+                        <li class="contacts__item item"><a class="contacts__link--contact link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li class="contacts__item item"><a class="contacts__link--contact link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                    </ul></address>
+                </div>
+                <div class="page-footer__joining">
+                    <h3 class="page-footer__subtitle">Приєднуйтесь</h3>
+                    <ul class="social-media__list list">
+                        <li class="social-media__item item">
+                            <a class="social-media__link social-media__link--dark-theme link" href="">
+                                <svg class="social-media__icon social-media__icon--dark-theme" width="20" height="20">
+                                    <use href="./img/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-media__item item">
+                            <a class="social-media__link social-media__link--dark-theme link" href="">
+                                <svg class="social-media__icon social-media__icon--dark-theme" width="20" height="20">
+                                    <use href="./img/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-media__item item">
+                            <a class="social-media__link social-media__link--dark-theme link" href="">
+                                <svg class="social-media__icon social-media__icon--dark-theme" width="20" height="20">
+                                    <use href="./img/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-media-item item">
+                            <a class="social-media__link social-media__link--dark-theme link" href="">
+                                <svg class="social-media__icon social-media__icon--dark-theme" width="20" height="20">
+                                    <use href="./img/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div>
                 <h3 class="page-footer__subtitle">Підпишіться на розсилку</h3>
                 <div class="page-footer__form">
                     <label class="form__label">
-                        <input type="email" name="mail" placeholder="E-mail" class="form__input form__input--placeholder">            
+                        <input type="email" name="mail" placeholder="E-mail" class="form__input form__input--placeholder">
                     </label>
-                    <button type="submit" class="form__btn">
-                        <span>Підпиcатися</span>
-                        <svg class="btn__icon" width="24" height="24">
-                            <use href="./img/icons.svg#icon-send"></use>
-                        </svg>
+                    <button type="submit" class="form__footer-btn">
+                        <div class="footer-btn">
+                            <span class="footter-btn__deskr">Підпиcатися</span>
+                            <svg class="footer-btn__icon" width="24" height="24">
+                                <use href="./img/icons.svg#icon-send"></use>
+                            </svg>
+                        </div>
                     </button>
                 </div>
             </div>

@@ -23,7 +23,6 @@ img {
     margin-right: auto;
     padding-right: 15px;
     padding-left: 15px;
-    background-color: aqua;
 
     @media screen and (min-width: $mobile) {
         width: $mobile;
@@ -49,6 +48,11 @@ img {
 }
 
 .section {
-    padding-bottom: 94px;
-    padding-top: 94px;
+    padding-bottom: 60px;
+    padding-top: 60px;
+
+    @media screen and (min-width: $desktop) {
+        padding-bottom: 94px;
+        padding-top: 94px;
+    }
 }

@@ -1,37 +1,55 @@
-// .customer__list {
-//     display: flex;
-//     justify-content: center;
-// }
+.customer__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: -15px;
 
-// .customer__item {
-//     flex-basis: calc((100% - 30px*5) / 6);
+    @media screen and (min-width: $desktop) {
+        flex-wrap: nowrap;
+    }
+}
 
-//     &:not(:last-child) {
-//         margin-right: 30px;
-//     }
-// }
+.customer__item {
+    border: 1px solid $main-icon-color;
+    border-radius: 4px;
+    
+    @media screen and (min-width: $mobile) {
+        flex-basis: calc((100% - 2 * 30px) / 2);
+        margin: 15px;
+        padding: 16px 52px;
+    }
+    @media screen and (min-width: $tablet) {
+        flex-basis: calc((100% - 3 * 30px) / 3);
+        padding: 16px 60px;
+    }
 
-// .customer__link {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
+    @media screen and (min-width: $desktop) {       
+        margin: 0;
+        padding: 16px 52px;
 
-//     width: 170px;
-//     height: 92px;
-//     color: $main-icon-color;
-//     border: 1px solid $main-icon-color;
-//     border-radius: 4px;
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+}
 
-//     transition: color $duration $timing-function,
-//         border $duration $timing-function;
+.customer__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: $main-icon-color;
+    
+    transition: color $duration $timing-function,
+        border $duration $timing-function;
 
-//     &:hover,
-//     &:focus {
-//         color: $acent-color;
-//         border: 1px solid $acent-color;
-//     }
-// }
+    &:hover,
+    &:focus {
+        color: $acent-color;
+        border: 1px solid $acent-color;
+    }
+}
 
-// .customer__icon {
-//     fill: currentColor;
-// }
+.customer__icon {
+    fill: currentColor;
+}

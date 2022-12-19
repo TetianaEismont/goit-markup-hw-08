@@ -1,7 +1,11 @@
 .social-media__list {
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
+    padding-bottom: 24px;
+
+    @media screen and (min-width: $desktop) {
+        padding-bottom: 30px;
+    }    
 }
 
 .social-media__item:not(:last-child) {
