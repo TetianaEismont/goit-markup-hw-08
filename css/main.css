@@ -557,6 +557,9 @@ img {
 @media screen and (max-width: 480px) {
   .customer__item {
     flex-basis: 100%;
+    margin: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 }
 @media screen and (min-width: 480px) {
