@@ -771,9 +771,6 @@ img {
     display: flex;
     align-items: baseline;
   }
-  .form__footer-btn {
-    margin-left: 12px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .page-footer__contacts {
@@ -857,6 +854,8 @@ img {
 }
 
 .form__footer-btn {
+  display: flex;
+  margin: 0 auto;
   padding: 10px 28px;
   min-width: 200px;
   font-family: inherit;
@@ -875,11 +874,10 @@ img {
 .form__footer-btn:hover, .form__footer-btn:focus {
   background-color: #188CE8;
 }
-
-.footer-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@media screen and (min-width: 1200px) {
+  .form__footer-btn {
+    margin-left: 12px;
+  }
 }
 
 .footer-btn__icon {
