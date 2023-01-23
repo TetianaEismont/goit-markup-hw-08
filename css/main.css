@@ -589,7 +589,7 @@ img {
 }
 .customer__link:hover, .customer__link:focus {
   color: #2196F3;
-  border: #2196F3;
+  border-color: #2196F3;
 }
 @media screen and (min-width: 480px) {
   .customer__link {
