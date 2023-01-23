@@ -117,6 +117,10 @@
     @media screen and (max-width: $tablet) {
         width: 450px;
     }
+   
+    @media screen and (max-width: $mobile) {
+        width: 100%;
+    }
 }
 
 .form__footer-btn {
