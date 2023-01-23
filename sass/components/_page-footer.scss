@@ -3,9 +3,13 @@
     padding-top: 60px;
     padding-bottom: 60px;
     text-align: center;
+
+    @media screen and (min-width: $desktop) {
+        padding-top: 72px;
+    }
 }
 
-@media screen and (min-width: $tablet) and (max-width: $desktop) {
+@media screen and (min-width: $tablet) {
     .page-footer__container--tablet {
         display: flex;
         justify-content: space-around;
@@ -15,12 +19,12 @@
 @media screen and (min-width: $desktop) {
     .page-footer__container {
         display: flex;
-        align-items: center;
         justify-content: space-between;
     }
 
     .page-footer__form {
-        display: flex;        
+        display: flex;
+        align-items: baseline;        
     }
 
     .form__footer-btn {
@@ -29,10 +33,11 @@
 
 }
 
-
-// .page-footer__contacts {
-//     margin-right: 70px;
-// }
+@media screen and (min-width: $desktop) {
+    .page-footer__contacts {
+        margin-right: 70px;
+    }
+}
 
 .contacts__list {
     // display: inline-block;
@@ -75,6 +80,7 @@
     margin-bottom: 20px;
     font-size: 14px;
     line-height: 1.14;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $secondary-text-color;
 }
@@ -90,7 +96,7 @@
     margin-bottom: 20px;
 
     padding: 15px 16px;
-    width: 450px;
+    max-width: 450px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
@@ -103,9 +109,14 @@
 }
 
 .form__input--placeholder {
+    width: 358px;
     font-size: 16px;
     line-height: 1.25;
-    color: rgba(255, 255, 255, 0.6)
+    color: rgba(255, 255, 255, 0.6);
+
+    @media screen and (max-width: $tablet) {
+        width: 450px;
+    }
 }
 
 .form__footer-btn {

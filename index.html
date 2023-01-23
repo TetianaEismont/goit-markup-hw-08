@@ -14,30 +14,28 @@
     <!--Шапка-->
     <header class="page-header">
         <div class="page-header__container container">            
-            <div class="page-header--mobile">
-                <a class="page-header__logo site-nav__element logo--header link" href="./index.html"><span class="logo--accent">Web</span>Studio</a>
-                <button type="button" 
-                aria-expanded="false" 
-                aria-controls="menu-container" 
-                class="page-header__btn"
-                data-menu-button>
+            <div class="site-nav__container">
+                <a class="site-nav__element page-header__logo logo--header link" href="./index.html"><span class="logo--accent">Web</span>Studio</a>
+
+                <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
                     <svg width="40" height="40" aria-label="Перемикач мобільного меню">
                         <use class="page-header__btn--open" href="./img/icons.svg#icon-open-menu"></use>
-                        <use class="page-header__btn--close" href="./img/icons.svg#icon-close-menu"></use>
                     </svg>
                 </button>
+                
+                <div class="site-nav__element site-nav__element--ishidden" id="menu-container">
+                    <nav class="site-nav">
+                        <ul class="site-nav__list list">
+                            <li class="site-nav__item item page-header__current-item"><a
+                                    class="site-nav__link link page-header__current-link" href="./index.html">Студія</a></li>
+                            <li class="site-nav__item item"><a class="site-nav__link link" href="./portfolio.html">Портфоліо</a></li>
+                            <li class="site-nav__item item"><a class="site-nav__link link" href="#">Контакти</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
 
-            <div class="site-nav--mobile" id="menu-container" data-menu>
-                <nav class="site-nav">
-                    <ul class="site-nav__element site-nav__list list">
-                        <li class="site-nav__item item page-header__current-item"><a
-                                class="site-nav__link link page-header__current-link" href="./index.html">Студія</a></li>
-                        <li class="site-nav__item item"><a class="site-nav__link link" href="./portfolio.html">Портфоліо</a></li>
-                        <li class="site-nav__item item"><a class="site-nav__link link" href="#">Контакти</a></li>
-                    </ul>
-                </nav>
-                
+            <div class="header-contacts__container">          
                 <ul class="header-contacts list">
                     <li class="header-contacts__item item">
                         <a class="header-contacts__link link" href="mailto:info@devstudio.com">
@@ -488,9 +486,54 @@
             </form>
         </div>
     </div>
+
+    <!--Мобільне меню-->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button type="button" class="menu-toggle js-close-menu">
+            <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+                <use class="page-header__btn--close" href="./img/icons.svg#icon-close-menu"></use>
+            </svg>
+        </button>
+        <div class="mobile-menu">
+            <div>
+                <ul class="mobile-nav__list list">
+                    <li class="mobile-nav__item item"><a class="mobile-nav__link link" href="./index.html">Студія</a></li>
+                    <li class="mobile-nav__item item"><a class="mobile-nav__link link" href="./portfolio.html">Портфоліо</a></li>
+                    <li class="mobile-nav__item item"><a class="mobile-nav__link link" href="">Контакти</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <ul class="mobile-menu-contacts list">
+                    <li class="mobile-menu-contacts__item item">
+                        <a class="mobile-menu-contacts__link mobile-menu-contacts__link--tel link" href="tel:+380961111111">
+                            +38 096 111 11 11</a>
+                    </li>
+                    <li class="mobile-menu-contacts__item item">
+                        <a class="mobile-menu-contacts__link link mobile-menu-contacts__link--email" href="mailto:info@devstudio.com">
+                            info@devstudio.com
+                        </a>
+                    </li>                    
+                </ul>
+                
+                <div class="mobile-menu__social-media--main">
+                    <ul class="social-media--main__list list">
+                        <li class="social-media--main__item"><a class="social-media--main__link link" href="">Instagram</a></li>
+                        <li class="social-media--main__item"><a class="social-media--main__link link" href="">Twitter</a></li>
+                        <li class="social-media--main__item"><a class="social-media--main__link link" href="">Facebook</a></li>
+                        <li class="social-media--main__item"><a class="social-media--main__link link" href="">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </div>
     
-    <!--Скрипт-->
+    <!--Скрипти-->
    <script src="./js/modal.js"></script>
+   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
